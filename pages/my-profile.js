@@ -24,7 +24,7 @@ export default function Profile() {
         <Button variant="danger" onClick={signOut}> Sign Out</Button>
         <div className="text-center my-4">
           {/* <Image src={user.photoURL} alt="userURL" width="100px" height="100px" /> */}
-          <h1>{user.displayName}</h1>
+          <h1>{user.fbUser.displayName}</h1>
         </div>
       </div>
       <div className="d-flex flex-wrap">

@@ -23,7 +23,7 @@ function Home() {
 
         <Button
           onClick={() => {
-            router.push('/product/new');
+            router.push('/products/new');
           }}
         >
           Register New Product

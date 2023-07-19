@@ -23,6 +23,7 @@ const ProductForm = ({ obj }) => {
         name: obj.name,
         image: obj.image,
         price: obj.price,
+        uid: user.uid,
       });
     }
   }, [obj, user]);
@@ -46,6 +47,7 @@ const ProductForm = ({ obj }) => {
         name: currentProduct.name,
         image: currentProduct.image,
         price: currentProduct.price,
+        uid: user.uid,
       };
 
       updateProduct(productUpdate)
@@ -55,6 +57,7 @@ const ProductForm = ({ obj }) => {
         name: currentProduct.name,
         image: currentProduct.image,
         price: currentProduct.price,
+        uid: user.uid,
       };
 
       createProduct(products).then(() => router.push('/product'));
